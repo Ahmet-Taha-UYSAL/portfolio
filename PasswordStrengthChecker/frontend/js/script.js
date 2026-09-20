@@ -6,8 +6,8 @@ const crackTimeText = document.getElementById('crackTime');
 
 // Fonction pour traduire les durées de zxcvbn en français
 function traduireTemps(tempsAnglais) {
-    if (tempsAnglais === "less than a second") return "Instantané ⚠️";
-    if (tempsAnglais === "centuries") return "Des siècles 🛡️";
+    if (tempsAnglais === "less than a second") return "Instantané";
+    if (tempsAnglais === "centuries") return "Des siècles";
 
     return tempsAnglais
         .replace("seconds", "secondes").replace("second", "seconde")
