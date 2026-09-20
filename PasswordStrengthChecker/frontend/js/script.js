@@ -4,6 +4,21 @@ const progressBar = document.getElementById('progressBar');
 const feedbackMessage = document.getElementById('feedbackMessage');
 const crackTimeText = document.getElementById('crackTime');
 
+// Fonction pour traduire les durées de zxcvbn en français
+function traduireTemps(tempsAnglais) {
+    if (tempsAnglais === "less than a second") return "Instantané ⚠️";
+    if (tempsAnglais === "centuries") return "Des siècles 🛡️";
+
+    return tempsAnglais
+        .replace("seconds", "secondes").replace("second", "seconde")
+        .replace("minutes", "minutes").replace("minute", "minute")
+        .replace("hours", "heures").replace("hour", "heure")
+        .replace("days", "jours").replace("day", "jour")
+        .replace("months", "mois").replace("month", "mois")
+        .replace("years", "ans").replace("year", "an")
+        .replace("centuries", "siècles").replace("century", "siècle");
+}
+
 // Dictionnaire des cases de critères
 const criteresUI = {
     longueur: document.getElementById('crit-longueur'),
@@ -74,7 +89,11 @@ if (passwordInput) {
         if (typeof zxcvbn !== 'undefined') {
             const zxcvbnResult = zxcvbn(motDePasse);
             const times = zxcvbnResult.crack_times_display;
-            crackTimeText.textContent = times.offline_slow_hashing_1e4_per_second;
+            
+            // On récupère le texte en anglais et on le passe dans notre traducteur
+            const tempsEnAnglais = times.offline_slow_hashing_1e4_per_second;
+            crackTimeText.textContent = traduireTemps(tempsEnAnglais);
+            
             crackTimeText.style.color = zxcvbnResult.score >= 3 ? '#10b981' : '#EF4444';
         }
 
