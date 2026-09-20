@@ -80,7 +80,7 @@ if (passwordInput) {
 
         // 2. Appel au backend FastAPI
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/tester-mdp', {
+            const response = await fetch('https://api-testeur-mdp.onrender.com/api/tester-mdp', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ mot_de_passe: motDePasse })
