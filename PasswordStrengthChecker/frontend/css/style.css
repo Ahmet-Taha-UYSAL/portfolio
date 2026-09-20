@@ -266,3 +266,15 @@ body {
     text-decoration: underline;
 }
 
+/* Couleurs dynamiques pour les critères de mot de passe */
+.border-red {
+    border-color: #ef4444 !important;
+}
+
+.border-orange {
+    border-color: #f59e0b !important;
+}
+
+.border-green {
+    border-color: #10b981 !important;
+}
