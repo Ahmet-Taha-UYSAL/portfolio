@@ -12,9 +12,9 @@ body {
 .conteneur-fond {
     background: #181c21;
     width: 100vw;
-    height: 100dvh;
+    height: 200vh;
     position: fixed;
-    top: 0;
+    top: -50vh;
     left: 0;
     z-index: -2;
 }
