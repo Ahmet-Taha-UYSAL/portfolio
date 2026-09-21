@@ -6,7 +6,7 @@
     <title>Testeur de Mot de Passe</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
-    
+
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -90,11 +90,23 @@
                     </div>
 
                     <!--estimation de temps pour craquer ce mot de passe-->
-                    <h4 class="cartes-texte2">Temps estimé pour craquer ce mot de passe :</h4>
+                    <h4 class="cartes-texte">Temps estimé pour craquer ce mot de passe :</h4>
                     <p class="crackTime" id="crackTime">Instantané </p>
                     <span class="source-info">Modèle d'estimation basé sur <a href="https://github.com/dropbox/zxcvbn" target="_blank" rel="noopener noreferrer">zxcvbn</a> (Open Source)</span>
                 </div>
             </div>
+            <!-- Carte 3 -->
+            <div class="arriere-cartes">
+                <div class="cartes">
+                    <h2 class="cartes-titre">Note technique sur l'hébergement</h2>
+                    <p class="cartes-texte-infos">
+                        L'analyse de votre mot de passe est propulsée par une véritable architecture client-serveur (FastAPI en Python) hébergée sur une instance Cloud gratuite. 
+                        <br><br>
+                        Après 15 minutes d'inactivité, le serveur se met en veille. <strong>Le premier test peut donc nécessiter un délai d'environ 40 à 50 secondes</strong> le temps de relancer l'API. Les requêtes suivantes redeviennent instantanées !
+                    </p>
+                </div>
+            </div>
+
         </div>
 
 
