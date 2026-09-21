@@ -6,7 +6,7 @@ body {
     margin: 0; /* Supprime les bordures blanches par défaut du navigateur */
     background-color: #181c21; /* Force les barres système (haut et bas) à prendre la couleur sombre */
     overflow-x: hidden;
-    min-height: 100vh; /* Assure que le corps du document fait au moins la taille de l'écran */
+    min-height: 1000vh; /* Assure que le corps du document fait au moins la taille de l'écran */
 }
 
 .conteneur-fond {
