@@ -154,8 +154,6 @@ body {
     justify-content: center
 }
 .conteneur-analyse {
-    margin-top: 5%;
-    width: 50%;
     max-width: 100%;
     background: #f8fafc;
     border-radius: 999px;
@@ -302,6 +300,11 @@ ADAPTATION MOBILE (Écrans de 768px et moins)
     .icon-eye {
         margin-right: 25%;
     }
+
+    .conteneur-analyse {
+        margin-top: 5%;
+        width: 50%;
+    }
 }
 
 @media (max-width: 450px){
@@ -322,5 +325,10 @@ ADAPTATION MOBILE (Écrans de 768px et moins)
 
     .icon-eye {
         margin-right: 10%;
+    }
+
+    .conteneur-analyse {
+        margin-top: 5%;
+        width: 80%;
     }
 }
