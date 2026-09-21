@@ -95,8 +95,6 @@ body {
 }
 
 .input {
-    margin-left: 25%;
-    width: 50%;
     height: 45px;
     line-height: 30px;
     padding: 0 3rem;
@@ -131,7 +129,6 @@ body {
 }
 
 .icon-eye {
-    margin-right: 25%;
     position: absolute;
     right: 1rem;
     fill: none;
@@ -289,10 +286,22 @@ ADAPTATION MOBILE (Écrans de 768px et moins)
         max-width: 750px;
     }
 
-   .arriere-cartes {
-       box-shadow: 20px 20px 30px black;
-   }
+    .arriere-cartes {
+        box-shadow: 20px 20px 30px black;
+    }
 
+    .input {
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .icon {
+        margin-left: 25%;
+    }
+
+    .icon-eye {
+        margin-right: 25%;
+    }
 }
 
 @media (max-width: 450px){
@@ -302,4 +311,16 @@ ADAPTATION MOBILE (Écrans de 768px et moins)
         padding-right: 3%;
     }
 
+    .input {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .icon {
+        margin-left: 10%;
+    }
+
+    .icon-eye {
+        margin-right: 10%;
+    }
 }
